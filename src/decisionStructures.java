@@ -6,6 +6,7 @@ Ch.3 Expectations:
 - Print letter grade A/B/C/D/F
 */
 import java.util.Scanner;
+import java.lang.Throwable;
 public class decisionStructures {
 
 	public static void main(String[] args) {
@@ -13,6 +14,9 @@ public class decisionStructures {
 		
 		
 		Scanner in = new Scanner(System.in);
+		
+		
+		
 		System.out.println("Please input a grade 1-100.");
 		int grade = in.nextInt();
 		
