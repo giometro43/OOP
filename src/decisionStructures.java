@@ -18,7 +18,7 @@ public class decisionStructures {
 		int grade = in.nextInt();
 		
 		// input validation, needs to be an integer
-		//if(grade > 100 || grade <= -1 ) {
+		
 		while(grade > 100 || grade <= -1) {
 			//NOTE: change if loop to while since it only repeats once
 			/*Logic explanation: while grade is less than or equal
