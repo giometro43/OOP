@@ -12,23 +12,23 @@ public class decisionStructures {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		
 		Scanner in = new Scanner(System.in);
-		
-		
 		
 		System.out.println("Please input a grade 1-100.");
 		int grade = in.nextInt();
+		
 		// input validation, needs to be an integer
-		if(grade > 100 || grade <= -1 ) {
+		//if(grade > 100 || grade <= -1 ) {
+		while(grade > 100 || grade <= -1) {
 			//NOTE: change if loop to while since it only repeats once
-			/*Logic explanation: if grade is less than or equal
-			 *to -1 (Neg inf) OR greater than 100 (positive if)
+			/*Logic explanation: while grade is less than or equal
+			 *to -1 (Neg inf) OR greater than 100 (positive if),repeat text prompt
 			 leaves range 0-100 */
 			System.out.println("Please input a grade 1-100.");
 			grade = in.nextInt();   
+				
 		}
-		else if(grade <=100 && grade >=90){  
+		if(grade <=100 && grade >=90){  
 			System.out.print( "GRADE : A");
 		}
 		else if(grade <=89 && grade >=80){
