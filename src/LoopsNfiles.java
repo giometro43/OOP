@@ -6,7 +6,29 @@ public class LoopsNfiles {
 	- Use for loop once (e.g., to echo values or simulate N iterations)
 	- Optional: write results to a file and read it back*/
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		String me = "uncool";
+		while(me == "uncool") {
+		
+			//do-while loop example 
+		
+			int homers = 0;
+			do {
+				homers = homers + 1; 
+				System.out.print("HOME RUNNN SHOHEII OHTANI #" + homers + "\n");
+			}
+			while( homers < 10);
+			
+			for(int injured49ers = 1; injured49ers < 53; injured49ers++  ) {
+				System.out.print("We've got someone down on the field! Player hurt #" + injured49ers + "\n");
+			}
+		
+			
+			
+			
+			me = "cool";
+		}
+		
 
 	}
 
