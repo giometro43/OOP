@@ -44,7 +44,6 @@ public class P114HelloClassCipher {
 		message = h+e+l+l+o+comm+spce+c+l+a+s+s+excl;
 		
 		// print the message
-		//
 		System.out.print(message);
 
 	}
