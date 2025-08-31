@@ -13,6 +13,8 @@ public class P126TwoDices {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Dice Roller by Giovanni Castillo on 08/31/2025");
+
 		int dice1;
 		int dice2;
 		// rolls two dice by defining the range of the random numbers
