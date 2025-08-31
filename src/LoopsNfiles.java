@@ -7,11 +7,12 @@ public class LoopsNfiles {
 	- Optional: write results to a file and read it back*/
 	public static void main(String[] args) {
 		
+		//Side track of example for while loop, changes the string at the end
 		String me = "uncool";
 		while(me == "uncool") {
 		
-			//do-while loop example 
-		
+			
+			//			
 			int homers = 0;
 			do {
 				homers = homers + 1; 
@@ -19,6 +20,7 @@ public class LoopsNfiles {
 			}
 			while( homers < 10);
 			
+			//Use for loop once (e.g., to echo values or simulate N iterations) (X)
 			for(int injured49ers = 1; injured49ers < 53; injured49ers++  ) {
 				System.out.print("We've got someone down on the field! Player hurt #" + injured49ers + "\n");
 			}
