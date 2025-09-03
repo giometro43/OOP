@@ -21,18 +21,12 @@ public class P157DateConverter {
 		System.out.println("Enter a date in the format mm/dd/yyyy: ");
 		String dateRaw = in.nextLine();
 		
-		int dateMonthint = dateRaw.indexOf("/");
-		String dateMonth = dateRaw.substring(0 , dateMonthint);
-		System.out.println(dateMonth);
 		
-		int dateDayint = dateRaw.indexOf("/", dateMonthint + 1 );
-		String dateDay = dateRaw.substring(dateDayint, dateMonthint);
-		System.out.println(dateDay);
+		// index of the three sides of the date format.
+		int index1 = dateRaw.indexOf('/');
+		int index2 = dateRaw.lastIndexOf('/');
 		
-		int dateYearint = dateRaw.indexOf("/");
-		String dateYear = dateRaw.substring(5 , dateYearint);
-		System.out.println(dateYear);
-		
+		int month = Integer.parseInt(dateRaw.substring(0,index1));
 	}
 
 }
