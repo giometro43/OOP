@@ -1,6 +1,6 @@
 package m1b;
 import java.util.Scanner;
-/*@author Giovanni Castillo AIT502-11
+/**@author Giovanni Castillo AIT502-11
 Module: 
 Assignment: M1B-21	
 Program: 154 Computer Guess Products
