@@ -19,14 +19,63 @@ public class P157DateConverter {
 		
 		
 		System.out.println("Enter a date in the format mm/dd/yyyy: ");
-		String dateRaw = in.nextLine();
+		String dateInput = in.nextLine();
 		
 		
 		// index of the three sides of the date format.
-		int index1 = dateRaw.indexOf('/');
-		int index2 = dateRaw.lastIndexOf('/');
+		int index1 = dateInput.indexOf('/');
+		int index2 = dateInput.lastIndexOf('/');
 		
-		int month = Integer.parseInt(dateRaw.substring(0,index1));
+		int month = Integer.parseInt(dateInput.substring(0,index1));
+		int day = Integer.parseInt(dateInput.substring(index1 + 1, index2));
+		int year = Integer.parseInt(dateInput.substring(index2 + 1));
+		//check year input
+		boolean wrong;
+		switch (month) {
+		//all months with 31 days
+		case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+			wrong = day > 31 || day < 1;
+			break;
+		case 4: case 6: case 9: case 11:
+			//months with 30 days
+			wrong = day < 1 || day >30;
+			break;
+		case 2: 
+			// for feb, check if leap year
+			//check if leap year
+			if (year % 400 == 0 ||year % 4 == 0 && year % 100 != 0) {
+				wrong = day <1 || day >29;
+			}
+			else{
+				wrong = day <1|| day>28;
+			}
+		break;
+		default:
+			wrong  = true;
+			break;
+		}	
+		if (wrong) {
+			System.out.println("Your date is wrong, try again.");
+			return;}
+		String dateOutput = "";
+		switch(month)
+		{
+		case 1:dateOutput = "January";break;
+		case 2: dateOutput = "Feburary";break;
+		case 3: dateOutput = "March";break;
+		case 4: dateOutput = "April";break;
+		case 5: dateOutput = "May";break;
+		case 6: dateOutput = "June";break;
+		case 7: dateOutput = "July";break;
+		case 8: dateOutput = "August";break;
+		case 9: dateOutput = "September";break;
+		case 10: dateOutput = "October";break;
+		case 11: dateOutput = "November";break;
+		case 12: dateOutput = "December";break;}
+		dateOutput +=" " + day + ", " + year;
+		System.out.println("the date is : " + dateOutput);
+		
 	}
+
 
 }
