@@ -13,7 +13,7 @@ public class P218PowerTable {
  * but with extra spaces as needed for allignment.*/
 	public static void main(String[] args) {
 		System.out.println("Power Table by Giovanni Castillo on 09/07/2025");
-
+		
 	}
 
 }
