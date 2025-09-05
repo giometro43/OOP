@@ -17,8 +17,8 @@ public class P216Temperature {
 		
 		//initialize the computations
 		String maxCity = null;
-		double maxTempCelsius= 0;
 		double maxTempFer = 0;
+		String maxTempCity = null;
 		
 		
 		//read the first token
@@ -36,26 +36,32 @@ public class P216Temperature {
 			//the current format is a number followed by a letter so we cant make it a double yet
 			char unit = tempString.charAt(tempString.length()-1);
 			/*read the last character of the string to determine if its 
-			 * in Celsius or Fahrenheit by using charAt
+			 * in Celsius or fahrenheit by using charAt
 			charAt reads a specific character in a string based on its index
 			in laymens terms it reads the last character of the string*/
 			double tempNum = Double.parseDouble(tempString.substring(0, tempString.length()-1));
 			/*read the number portion of the string by using substring
-			 * substring reads a portion of a string based on the starting and ending index. example: 23C has a length of 3 so length()-1 is 2 which is the index of C so we exclude it and read from index 0 to index 1 which is 23
-			 * */
-			//convert to Feienheight if needed
+			 * substring reads a portion of a string based on the starting
+			 *  and ending index. example: 23C has a length of 3 so 
+			 *  length()-1 is 2 which is the index of C so we exclude 
+			 *  it and read from index 0 to index 1 which is 23*/
+			//convert to fahrenheit if needed
 			if (unit == 'C') {
 				/* convert to Celsius using string manipulation we did earlier we would
 				use the formula F= C * 9/5 +32 to convert C to F
 			 	by isolating F */ 
-				
-				
+				//use the variable tempNum to store the converted temperature
+				tempNum = tempNum * 9/5 +32;
+				System.out.println("Converting tempurature from " + tempString + " to fahrenheit. " );
+			
 			}
 			
 			// If the temperature is bigger than the current max
-			
+			if (tempNum > maxTempFer) {
 				// Update the biggest temperature
-				
+				maxTempFer = tempNum;
+				maxTempCity = cityName;
+			}
 			//Print debug information
 			System.out.println("City Name:" +cityName);
 			System.out.println("Tempurature:" + tempNum);
@@ -66,12 +72,11 @@ public class P216Temperature {
 		//end of while
 		}
 		//close the scanner
-		
+		in.close();
 		//print the final result
-		
-		
-		
-		
+		System.out.println("The max city tempurature is: "+ maxTempFer);
+		System.out.println("The Hottest city is: "+ maxTempCity);
+
 		
 	}
 

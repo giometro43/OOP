@@ -12,6 +12,25 @@ public class P217MultiplicationTable {
  * Allign the values in the table.*/
 	public static void main(String[] args) {
 		System.out.println("Multiplication Table by Giovanni Castillo on 09/07/2025");
+		//read and check the number :n
+		int n = Integer.parseInt(args[0]);
+		//stop if not valid input
+		if(n > 20 || n < 1) {
+			System.out.println("ERROR: not between 1-10");
+			return;
+		}
+		//creating a for loop
+		for (int m=1; m<=20; m++) { // for the condition of 1 to 10, increment after completion of first attempt
+		
+		
+		//for each number , from 1 to 10
+			while(m<=20) {
+			//print the line n x m
+				// next m
+				System.out.printf("%d x %2d = %3d\n", n,m, n*m);//%d = entirety, %2d = only 2 digits , %3d = 3 digits
+				m++;
+						}
+			}
 
 	}
 
