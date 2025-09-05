@@ -1,0 +1,7 @@
+Scooty     Smalls     square    3.2
+Mayree     Curie      rectangle    2.2   4.4
+John       Wayne      circle    3.7
+Bart       Simpson    rectangle 1.7 5.2
+
+###END###
+

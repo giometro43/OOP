@@ -19,7 +19,7 @@ public class P214LetterFrequency {
 		//since we are counting letters now
 		char letter = ' ';
 		int countLetters = 0;
-		int countThe = 0;
+		
 		int countA =0;
 		int countE =0;
 		int countI =0;
