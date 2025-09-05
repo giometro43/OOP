@@ -42,14 +42,37 @@ public class P213WordFrequency {
 			//print the read token and the prepared word
 			System.out.println("Token:    "+token + "------------    Word:     " + word);
 			//process the word
-			
+			countWords++;
+			if (word.equals("the")) countThe++;
+			if (word.equals("a")) countA++;
+			if (word.equals("an")) countAn++;
+			if (word.equals("and")) countAnd++;
+
+
 			//read the next token
-		token = in.next();
+			token = in.next();
 		}
 			in.close();
-		//compute frequency
+		//compute frequency by converting to double for countThe, since we will get word otherwise
+			//the current format of the dividend is integer. use 100.0 to get percentage
+		double freqThe = 100.0 * countThe / (double)countWords;
+		double freqA = 100.0 * countA / (double)countWords;
+		double freqAn = 100.0 * countAn / (double)countWords;
+		double freqAnd = 100.0 * countAnd / (double)countWords;
+
 		
-		//print the result of computations 
+		//print the result of computations
+			System.out.println("Total words: " + countWords);
+			System.out.println("Number of \"the\": " + countThe);
+			System.out.println("Number of \"a\": " + countA);
+			System.out.println("Number of \"an\": " + countAn);
+			System.out.println("Number of \"and\": " + countAnd);
+			System.out.println("Frequency of of \"the\": " + freqThe);
+			System.out.println("Frequency of of \"a\": " + freqA);
+			System.out.println("Frequency of of \"an\": " + freqAn);
+			System.out.println("Frequency of of \"and\": " + freqAnd);
+			
+
 	}
 
 }
