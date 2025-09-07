@@ -15,7 +15,7 @@ Program: 254 Age Analysis
  * and count how many persons have an age within 5 years of yours.
  */
 
-//base program on P253
+//based on program P253
 public class P254AgeAnalysis {
     public static void main(String[] args) {
         System.out.println("Age Analysis by Giovanni Castillo on 09/08/2025");
