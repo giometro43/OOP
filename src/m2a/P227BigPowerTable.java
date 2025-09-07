@@ -46,5 +46,4 @@ public class P227BigPowerTable {
         // Close resources
         in.close();
 	}
-
 }
