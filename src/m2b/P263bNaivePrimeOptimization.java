@@ -14,7 +14,6 @@ public class P263bNaivePrimeOptimization {
     public static void main(String[] args) {
         System.out.println("Naive Prime Optimization (b) by Giovanni Castillo on 09/08/2025");
         
-System.out.println("Naive Prime by Giovanni Castillo on 09/07/2025");
         
         
         // read the number to which we compute the prime numbers (N)
