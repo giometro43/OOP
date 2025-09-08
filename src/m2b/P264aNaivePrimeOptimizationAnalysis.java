@@ -12,5 +12,35 @@ Program: 264a Naive Prime Optimization Analysis
 public class P264aNaivePrimeOptimizationAnalysis {
     public static void main(String[] args) {
         System.out.println("Naive Prime Optimization Analysis (a) by Giovanni Castillo on 09/08/2025");
+        //using the same comment structure as previous optimization P264a 
+        
+        
+
+        // read the number to which we compute the prime numbers (N)
+        System.out.println("n       primes   time(ms)");
+        for (int arg = 0; arg < args.length; arg++) {
+            int n = Integer.parseInt(args[arg]);
+            if (n < 2) {
+                System.out.printf("%d     ERROR\n", n);
+                continue;
+            }
+            long startTime = System.currentTimeMillis();
+            int noOfPrimes = 0;
+            for (int k = 2; k <= n; k++) {
+                boolean prime = true;
+                for (int i = 2; i <= k - 1; i++) {
+                    if (k % i == 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+                if (prime) {
+                    noOfPrimes++;
+                }
+            }
+            long endTime = System.currentTimeMillis();
+            long duration = endTime - startTime;
+            System.out.printf("%-7d %-8d %-8d\n", n, noOfPrimes, duration);
+        }
     }
 }
