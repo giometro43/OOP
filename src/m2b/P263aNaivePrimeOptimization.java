@@ -13,5 +13,7 @@ Program: 263a Naive Prime Optimization
 public class P263aNaivePrimeOptimization {
     public static void main(String[] args) {
         System.out.println("Naive Prime Optimization (a) by Giovanni Castillo on 09/08/2025");
+        
+        
     }
 }
