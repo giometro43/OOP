@@ -1,18 +1,16 @@
-/**
- * 
- */
 package m3a;
-
-/**
- * 
- */
+/**@author Giovanni Castillo AIT502-11
+Module: 
+Assignment:
+Program: 
+*/
 public class P311GradeBasedCandyDistribution {
-
-	/**
-	 * @param args
+	/** REQUIREMENTS:
+	 * 
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        System.out.println("PROGRAM NAME by Giovanni Castillo on DUE/DATE/2025");
+
 
 	}
 
