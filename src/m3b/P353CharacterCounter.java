@@ -3,10 +3,11 @@
  * Library with utilities to define, print, and update a character counter for a text fragment.
  */
 package m3b;
-
-/**
- * 
- */
+/**@author Giovanni Castillo AIT502-11
+Module: Libraries
+Assignment: M3B-21
+Program: 
+*/
 public class P353CharacterCounter {
 
 	

@@ -9,9 +9,11 @@ import java.util.Scanner;
  * will kill the monster but will be destroyed by a wall.*/
 public class P325PlayerFireBullets {
 
-	/**
-	 * @param args
-	 */
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment:
+	Program: 
+	*/
 	public static void main(String[] args) {
 		System.out.println("Player fire bullets - Giovanni Castillo - 05/14/2025");
 		//cells in the room

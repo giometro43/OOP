@@ -1,18 +1,18 @@
-/**
- * REQUIREMENTS:
- * Read two arrays and compare: which one has the minimum value, the maximum value, the greater sum, the greater average.
- */
 package m3b;
 
 import java.util.Scanner;
 
-/**
- * 
- */
+/**@author Giovanni Castillo AIT502-11
+Module: Libraries
+Assignment: M3B-21
+Program: 352 - Compare Two Arrays
+*/
 public class P352CompareTwoArrays {
 
 	/**
-	 * @param args
+	 * REQUIREMENTS:
+	 * Read two arrays and compare: which one has the minimum value, 
+	 * the maximum value, the greater sum, the greater average.
 	 */
 	public static void main(String[] args) {
 		System.out.println("CompareTwoArrays by Giovanni Castillo due by 08/15/2025");

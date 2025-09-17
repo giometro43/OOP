@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 /**
  * @author Giovanni Castillo AIT502-11
- * Module: 3A
- * Assignment: Static Methods
+ * Module: Static Methods
+ * Assignment: M3A-21
  * Program: 313 - Check partial Sudoku*/
 public class P313CheckPartialSudoku {
     /**

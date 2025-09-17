@@ -4,8 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 /**@author Giovanni Castillo AIT502-11
 Module: Static Methods
-Assignment:
-Program: 
+Assignment: M3A-21
+Program: 311 - Grade Based Candy Distribution
 */
 public class P311GradeBasedCandyDistribution {
 	/** REQUIREMENTS:

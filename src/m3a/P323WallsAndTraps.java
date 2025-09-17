@@ -12,9 +12,11 @@ package m3a;
 	### */
 public class P323WallsAndTraps {
 
-	/**
-	 * @param args
-	 */
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment: M3A-21
+	Program: 323 - Walls and Traps
+	*/
 	public static void main(String[] args) {
 		System.out.println("Walls and Traps - Giovanni Castillo - 09/15/2025");
 		// Use methods from P322RandomRoomMethods for room setup

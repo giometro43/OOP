@@ -13,10 +13,11 @@ import java.util.Scanner;
  * (i.e. less or equal with .2 * (length-2) * (width-2) ). 
  * Print the obtained matrix.*/
 public class P321RandomRoom {
-
-	/**
-	 * @param args
-	 */
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment: M3A-21
+	Program: 321 - Random Room
+	*/
 	public static void main(String[] args) {
 		System.out.println("Random room - Giovanni Castillo - 05/14/2025");
 		Scanner scanner = new Scanner(System.in);

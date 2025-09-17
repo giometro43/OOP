@@ -12,10 +12,11 @@ import java.util.Scanner;
  * If the user hits a wall, a monster or is hit by a monster dies. 
  * If the user moved to Exit, wins.*/
 public class P324AvoidMonster {
-
-	/**
-	 * @param args
-	 */
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment:
+	Program: 
+	*/
 	public static void main(String[] args) {
 		System.out.println("Avoid monster - Giovanni Castillo - 05/14/2025");
 		//cells in the room

@@ -7,10 +7,11 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-
-/**
- * 
- */
+/**@author Giovanni Castillo AIT502-11
+Module: Libraries
+Assignment: M3B-21
+Program: 351 - Int Array Library Test
+*/
 public class P351IntArrayLibraryTest {
 
 	/**

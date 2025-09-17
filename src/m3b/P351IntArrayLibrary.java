@@ -1,17 +1,16 @@
-/**
- * REQUIREMENTS:
- * A library of methods to process an int array: int[].
- * Methods include: reading the array with a scanner, printing the array to the standard console, computing min, max, sum and average.
- */
 package m3b;
 import java.util.Scanner;
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment: M3B-21
+	Program: 351 - Int Array Library
+	*/
 public class P351IntArrayLibrary {
-
 	/**
-	 * @param args
+	 * REQUIREMENTS:
+	 * A library of methods to process an int array: int[].
+	 * Methods include: reading the array with a scanner, printing the array to the standard console, computing min, max, sum and average.
 	 */
-	
-	
 	
 	/**
 	 * Read an array from a scanner in the following format: <br>

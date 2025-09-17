@@ -6,9 +6,11 @@ import java.util.Scanner;
  */
 public class P322RandomRoomMethods {
 
-	/**
-	 * @param args
-	 */
+	/**@author Giovanni Castillo AIT502-11
+	Module: Static Methods
+	Assignment: M3A-21
+	Program: 322 - Random Room with Methods
+	*/
 	public static void main(String[] args) {
 		System.out.println("Random room methods - Giovanni Castillo - 05/14/2025");
 		Scanner scanner = new Scanner(System.in);

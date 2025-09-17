@@ -1,19 +1,17 @@
-/**
- * REQUIREMENTS:
- * Count the punctuation symbols (,.:;?!'"-()) in a provided text from a file.
- */
 package m3b;
 
 import java.util.Scanner;
 import java.io.File;
-
-/**
- * 
- */
+/**@author Giovanni Castillo AIT502-11
+Module: Libraries
+Assignment: M3B-21
+Program: 356 - Count Punctuation
+*/
 public class P356CountPunctuation {
 
 	/**
-	 * @param args
+	 * REQUIREMENTS:
+	 * Count the punctuation symbols (,.:;?!'"-()) in a provided text from a file.
 	 */
 	public static void main(String[] args) {
 		System.out.println("CountPunctuation by Giovanni Castillo due by 08/15/2025");
