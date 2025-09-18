@@ -38,22 +38,25 @@ public class P411Factorial {
 		 *  
 		 */
 		
+		if (n==1)return 1;//base case
 		
 		
-		if(n == 1)return 1;
-		if(n == 2)return 1;
-		
-		if(n == 1)return 1;
-		
-		// returns the value of N. 
-		return 1;
+		return factorial (n-1) *n;
 	}
 	
-	
+	/*
+	 * Main method testing the factorial defined for known values
+	 * examples include: 1!=1; 2!=2; 3!= 6 ;  4!=24;
+	 */
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Factorial by Giovanni Castillo - 09/21/2025");
-		
+		// repeat it 10 times
+		for (int i = 1; i<=10; i++ ){
+			System.out.printf("%d!=%d\n", i, factorial(i));
+			
+			}
 	}
 
 }
