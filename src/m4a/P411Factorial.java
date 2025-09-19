@@ -1,4 +1,5 @@
 package m4a;
+import java.util.Scanner;
 /**@author Giovanni Castillo AIT502-11
 Module: Recursivity
 Assignment: M4A-21
@@ -26,7 +27,7 @@ public class P411Factorial {
 	 * @param args - not used
 	 */
 	public static long factorial(int n) {
-		/* what is recursive implementation? :
+		/* SELF REVIEW: what is recursive implementation? 
 		 * A recursive implementation is a method that calls itself to solve a problem.
 		 * The method must have a base case to stop the recursion.
 		 * The method must also have a recursive case to call itself with a smaller problem.
@@ -52,8 +53,11 @@ public class P411Factorial {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Factorial by Giovanni Castillo - 09/21/2025");
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter the number of factorials please:");
+		int n = in.nextInt();
 		// repeat it 10 times
-		for (int i = 1; i<=10; i++ ){
+		for (int i = 1; i<=n; i++ ){
 			System.out.printf("%d!=%d\n", i, factorial(i));
 			
 			}
